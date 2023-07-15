@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/four-leaf-portal-ui'),
+      dir: require('path').join(__dirname, './coverage/jackbox-frontend'),
       subdir: '.',
       reporters: [
         { type: 'html' },

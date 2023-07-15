@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-  title = 'Four Leaf Portal';
+  title = 'Jackbox Frontend';
 
     constructor(
         private router: Router
