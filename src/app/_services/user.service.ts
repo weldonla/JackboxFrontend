@@ -1,4 +1,4 @@
-﻿import { Injectable, OnInit } from '@angular/core';
+﻿import { Injectable } from '@angular/core';
 import { Observable, Subject, map } from 'rxjs';
 import { GetUsersOutput, RegisterUser, User } from '../models/user';
 import { HttpClient } from '@angular/common/http';
@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 @Injectable({ providedIn: 'root' })
 export class UserService {
     private currentUserSubject = new Subject<User>();
-    private environmentName: string;
+    private environmentName: string; // @todo will this be needed here?
     private apiUrl: string;
     public currentUserIsAdmin: boolean;
 
@@ -62,6 +62,7 @@ export class UserService {
     }
     
     getListOfUsers(): Observable<User[]> {
+        // @todo implement paging/searching/filtering
         return this.http.get<any>(`${this.apiUrl}/api/users`).pipe(map((out: GetUsersOutput) => {
             let userList: User[] = new Array<User>();
             out.users.forEach(user => {

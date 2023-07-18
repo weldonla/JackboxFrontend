@@ -20,6 +20,7 @@ export class User {
     }
 }
 
+// @todo potentially move Register user to a new models file, or rename user.ts to have a more generalize name
 export class RegisterUser {
     firstName: string;
     lastName: string;

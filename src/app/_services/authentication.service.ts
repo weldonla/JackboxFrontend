@@ -7,7 +7,7 @@ import { User } from '../models/user';
 
 @Injectable({ providedIn: 'root' })
 export class AuthenticationService {
-    private environmentName: string;
+    private environmentName: string; // @todo will this be needed here?
     private apiUrl: string;
 
     constructor(private http: HttpClient, public jwtHelper: JwtHelperService) {

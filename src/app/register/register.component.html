@@ -51,6 +51,7 @@
                 </button>
             </div>
         </form>
+        <!-- @todo We should turn this button into a link, so it's more intuitive.  -->
         <div class="form-group position-absolute" style="bottom: 15px; right: 15px;">
             <button [disabled]="loading" class="btn btn-primary" (click)="navigateToLoginPage()">
                 <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
