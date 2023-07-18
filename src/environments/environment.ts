@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   environmentName: 'Development',
-  apiUrl: 'http://127.0.0.1:8000', // Change once we have an api instance up on the nas
+  apiUrl: 'http://127.0.0.1:4300', // Change once we have an api instance up on the nas
 };
 
 /*
